@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handson22</title>
+</head>
+<!--- Começo do projeto -->
+<body>
+    <!--- numero inteiro, id de conhecimento do numero  -->
+    número inteiro <input type="Number" id="inteiro">
+    <!--- botao para mostrar resultado do algoritmo  -->
+    <button onclick="Calcular()">Mostrar</button>
+    <!--- id do resultado na tag <p> para mostrar na pagina ao inves de um alert  -->
+    <p id="resultado"></p>
+
+    <script>
+        // função do script
+    function Calcular(){
+        // variaveis do script, numero inteiro
+        var inteiro = parseInt(document.getElementById('inteiro').value)
+        //condição da varievel inteiro
+        if((inteiro)){
+
+            //calculo da variavel para saber o sucessor e o anteseccor
+        var sucessor = inteiro + 1;
+        var antecessor = inteiro - 1;
+        var resultadoElement = document.getElementById("resultado");
+        //resultado do calculo, deve mostrar o sucessor e o antecessor do numero inteiro escolhido
+        resultadoElement.innerHTML = "Sucessor: " + sucessor + "<br>Antecessor:" + antecessor;
+      } else{
+        alert('Por favor, insira um número inteiro válido.')
+      }
+       
+    }
+
+
+    
+
+    
+// fim do projetoS
+    </script>
+  
+</body>
+</html>
